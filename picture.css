@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   }
+   nav .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 90%;
+    background: #ffffff;
+    margin: auto;
+   }
+   nav .navbar .logo a{
+     color: #fff;
+     font-size: 27px;
+     font-weight: 600;
+     text-decoration: none;
+   }
+   .navbar .menu li:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #000;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+   nav .navbar .menu{
+     display: flex;
+   }
+   .navbar .menu li{
+     list-style: none;
+     margin: 0 15px;
+   }
+   .navbar .menu li a{
+     color: #000000;
+     font-size: 17px;
+     font-weight: 500;
+     text-decoration: none;
+   }
+   #Pictures {
+    margin-top: 100px;
+    background: #000000;
+  }
+  .container{
+    width: 60%;
+    margin: 2rem auto;
+  }
+  .container h1{
+    margin-top: 5rem;
+    font-size: 25px;
+    font-weight: normal;
+    color: #000;
+    text-align: center;
+  }
+  .container h2{
+    margin-top: -250px;
+    font-size: 25px;
+    font-weight: normal;
+    color: #000;
+    text-align: center;
+  }
+  .container .gallery .gallery_img{
+    height: 240px;
+    width: 340px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0,.1);
+    overflow: hidden;
+    cursor: pointer;
+   }
+   .container .gallery .gallery_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+   }
+   .container .gallery .gallery_img:hover{
+    transform: scale(1.1);
+   }
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(15, 5vw);
+    grid-gap: 1.5rem;
+  }
+  .gallery_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    margin-top: -65px;
+  }
+  .gallery_item-1{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 6;
+  }
+  .gallery_item-2{
+    grid-column-start: 10;
+    grid-column-end: 19;
+    grid-row-start: 2;
+    grid-row-end: 6;
+  }
+  .gallery_item-3{
+    grid-column-start: 19;
+    grid-column-end: 28;
+    grid-row-start: 2;
+    grid-row-end: 6;
+  }
+  .gallery_item-4{
+    grid-column-start: 28;
+    grid-column-end: 37;
+    grid-row-start: 2;
+    grid-row-end: 6;
+  }
+  .gallery_item-5{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 10;
+  }
+  .gallery_item-6{
+    grid-column-start: 10;
+    grid-column-end: 19;
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+  .gallery_item-7{
+    grid-column-start: 10;
+    grid-column-end: 19;
+    grid-row-start: 8;
+    grid-row-end: 10;
+  }
+  .gallery_item-8{
+    grid-column-start: 19;
+    grid-column-end: 28;
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+  .gallery_item-9{
+    grid-column-start: 19;
+    grid-column-end: 28;
+    grid-row-start: 8;
+    grid-row-end: 10;
+  }
+  .gallery_item-10{
+    grid-column-start: 28;
+    grid-column-end: 37;
+    grid-row-start: 6;
+    grid-row-end: 10;
+  }
+  .gallery_item-11{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 10;
+    grid-row-end: 14;
+  }
+  .gallery_item-12{
+    grid-column-start: 10;
+    grid-column-end: 19;
+    grid-row-start: 10;
+    grid-row-end: 14;
+  }
+  .gallery_item-13{
+    grid-column-start: 19;
+    grid-column-end: 28;
+    grid-row-start: 10;
+    grid-row-end: 14;
+  }
+  .gallery_item-14{
+    grid-column-start: 28;
+    grid-column-end: 37;
+    grid-row-start: 10;
+    grid-row-end: 14;
+  }
+
+  .gallery_item-15{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 14;
+    grid-row-end: 16;
+    position: relative;
+    top: -1125px;
+  }
+  .gallery_item-16{
+    grid-column-start: 10;
+    grid-column-end: 19;
+    grid-row-start: 14;
+    grid-row-end: 16;
+    position: relative;
+    top: -1125px;
+  }
+  .gallery_item-17{
+    grid-column-start: 19;
+    grid-column-end: 28;
+    grid-row-start: 14;
+    grid-row-end: 16;
+    position: relative;
+    top: -1125px;
+  }
+  .gallery_item-18{
+    grid-column-start: 28;
+    grid-column-end: 37;
+    grid-row-start: 14;
+    grid-row-end: 16;
+    position: relative;
+    top: -1125px;
+  }
+  video {
+    margin-left: 300px;
+    margin-top: -60px;
+    position: relative;
+    top: -1125px;
+    width: 60%;
+  }
